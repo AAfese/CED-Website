@@ -1,0 +1,6 @@
+node_modules/
+.env
+temporary screenshots/
+
+# Unused 16.5 MB source video (not referenced by any page)
+Background Video.mov

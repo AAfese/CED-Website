@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New Here — Christ Embassy Duncanville | Church in Duncanville, TX</title>
+  <meta name="description" content="New to Christ Embassy Duncanville, TX? Plan your first visit, discover Foundation School, join a Cell, and find your place serving in the church." />
+  <link rel="canonical" href="https://christembassyduncanville.org/new-here.html" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Christ Embassy Duncanville" />
+  <meta property="og:title" content="New Here — Christ Embassy Duncanville" />
+  <meta property="og:description" content="New to Christ Embassy Duncanville, TX? Plan your first visit, discover Foundation School, join a Cell, and find your place." />
+  <meta property="og:url" content="https://christembassyduncanville.org/new-here.html" />
+  <meta property="og:image" content="https://christembassyduncanville.org/CED%20Logo.jpg" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="es_ES" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="New Here — Christ Embassy Duncanville" />
+  <meta name="twitter:description" content="Plan your first visit to Christ Embassy Duncanville, TX — we can't wait to meet you." />
+  <meta name="twitter:image" content="https://christembassyduncanville.org/CED%20Logo.jpg" />
+
+  <meta name="theme-color" content="#1A3A8F" />
+  <link rel="icon" href="CED Logo.jpg" />
+  <link rel="apple-touch-icon" href="CED Logo.jpg" />
+
+  <!-- Structured data: breadcrumb -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://christembassyduncanville.org/" },
+      { "@type": "ListItem", "position": 2, "name": "New Here", "item": "https://christembassyduncanville.org/new-here.html" }
+    ]
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="theme.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    /* Form field styling — rounded-xl inputs with a royal focus ring, shared across the site forms. */
+    .fld {
+      width: 100%; border-radius: 0.75rem; border: 1px solid rgba(13,13,13,0.15);
+      background: #fff; padding: 0.75rem 1rem; font-size: 15px; color: #0D0D0D;
+      transition: border-color .2s ease, box-shadow .2s ease;
+    }
+    .fld::placeholder { color: rgba(13,13,13,0.35); }
+    .fld:focus { outline: none; border-color: #1A3A8F; box-shadow: 0 0 0 3px rgba(26,58,143,0.12); }
+    select.fld { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%230D0D0D' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 0.9rem center; padding-right: 2.5rem; }
+    .fld-label { display: block; font-size: 13px; font-weight: 700; color: rgba(13,13,13,0.7); margin-bottom: 0.5rem; }
+    .fld-opt { font-weight: 500; color: rgba(13,13,13,0.35); }
+
+    /* Born-again radio pills */
+    .pill { cursor: pointer; }
+    .pill input { position: absolute; opacity: 0; pointer-events: none; }
+    .pill span { display: inline-flex; align-items: center; gap: .5rem; border: 1px solid rgba(13,13,13,0.15);
+      border-radius: 9999px; padding: .6rem 1.4rem; font-size: 14px; font-weight: 600; color: #0D0D0D; transition: all .2s ease; }
+    .pill input:checked + span { border-color: #1A3A8F; background: rgba(26,58,143,0.08); color: #1A3A8F; }
+    .pill input:focus-visible + span { outline: 2px solid #1A3A8F; outline-offset: 2px; }
+
+    /* ---- Form modal ---- */
+    #formModal[hidden] { display: none; }
+    .form-modal-panel[hidden] { display: none; }
+    /* Spring-style entrance for the dialog card */
+    @keyframes modalCardIn { from { opacity: 0; transform: translateY(16px) scale(.97); } to { opacity: 1; transform: translateY(0) scale(1); } }
+    @keyframes modalFadeIn { from { opacity: 0; } to { opacity: 1; } }
+    #formModal:not([hidden]) .form-modal-backdrop { animation: modalFadeIn .25s ease forwards; }
+    #formModal:not([hidden]) .form-modal-card { animation: modalCardIn .42s cubic-bezier(.16,1,.3,1) forwards; }
+    @media (prefers-reduced-motion: reduce) {
+      #formModal:not([hidden]) .form-modal-backdrop,
+      #formModal:not([hidden]) .form-modal-card { animation: none; }
+    }
+  </style>
+</head>
+
+<body class="bg-white antialiased" data-page="new-here">
+
+  <!-- ============== NAV (shared) ============== -->
+  <div id="site-nav"></div>
+
+  <!-- ============== PAGE HEADER ============== -->
+  <section class="relative overflow-hidden bg-[#2e0050] grain">
+    <div class="absolute inset-0" style="background:radial-gradient(125% 120% at 25% 10%, #6a1bb0 0%, #4B0082 52%, #2e0050 100%);"></div>
+    <div class="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-ink/70 to-transparent"></div>
+    <div class="pointer-events-none absolute -top-28 -left-24 h-[34rem] w-[34rem] rounded-full bg-gold/10 blur-[120px]"></div>
+    <div class="pointer-events-none absolute -bottom-24 right-0 h-[26rem] w-[26rem] rounded-full bg-royal/30 blur-[120px]"></div>
+
+    <div class="relative z-10 mx-auto max-w-7xl px-5 sm:px-8 pt-36 pb-16 sm:pt-40 sm:pb-20 text-center">
+      <span class="reveal inline-flex items-center gap-2 rounded-full border border-gold/40 bg-white/5 px-4 py-1.5 text-[12px] sm:text-[13px] font-600 tracking-[0.18em] uppercase text-gold backdrop-blur-sm">
+        <span class="h-1.5 w-1.5 rounded-full bg-gold"></span>
+        <span data-i18n="newhere.badge">New Here</span>
+      </span>
+      <h1 class="reveal mt-6 font-display font-900 text-white text-5xl sm:text-6xl lg:text-7xl leading-[0.98]" data-i18n-html="newhere.title_html">
+        Welcome — let's help <span class="italic text-gold">you belong</span>
+      </h1>
+      <p class="reveal lead mt-6 mx-auto max-w-xl text-lg text-white/80" data-i18n="newhere.lead">
+        Wherever you are on your journey of faith, there's a next step for you here — grow through Foundation School, find family in a Cell, and discover the joy of serving.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============== SECTION 1 · FOUNDATION SCHOOL ============== -->
+  <section id="foundation-school" class="relative bg-white py-20 sm:py-28 overflow-hidden">
+    <div class="pointer-events-none absolute top-10 right-0 h-[26rem] w-[26rem] rounded-full bg-royal/5 blur-[110px]"></div>
+    <div class="pointer-events-none absolute bottom-0 left-0 h-[22rem] w-[22rem] rounded-full bg-purple/5 blur-[110px]"></div>
+
+    <div class="relative mx-auto max-w-7xl px-5 sm:px-8">
+      <!-- Intro -->
+      <div class="mx-auto max-w-2xl text-center">
+        <span class="reveal inline-flex items-center gap-2 rounded-full bg-purple/10 px-4 py-1.5 text-[12px] font-700 tracking-[0.18em] uppercase text-purple" data-i18n="fs.badge">Grow Your Foundation</span>
+        <h2 class="reveal mt-5 font-display font-700 text-4xl sm:text-5xl text-ink leading-[1.05]" data-i18n-html="fs.title_html">
+          Foundation <span class="text-royal">School</span>
+        </h2>
+        <p class="reveal lead mt-5 text-lg text-ink/65" data-i18n="fs.lead">
+          Foundation School equips believers with a solid foundation in God's Word, helping them understand their identity in Christ, grow spiritually, and become effective in ministry, evangelism, and service in the local church.
+        </p>
+      </div>
+
+      <!-- 8 class cards (4 per row) -->
+      <div id="fsGrid" class="mt-14 grid gap-5 sm:gap-6 sm:grid-cols-2 lg:grid-cols-4"></div>
+
+      <!-- CTA -->
+      <div class="reveal mt-12 text-center">
+        <button type="button" data-open-form="foundation-school" class="inline-flex items-center justify-center gap-2 rounded-full bg-gold px-8 py-4 text-[15px] font-700 text-ink shadow-gold transition-transform duration-300 ease-out hover:-translate-y-0.5 active:translate-y-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple">
+          <span data-i18n="fs.enroll">Enroll Now</span>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== SECTION 2 · CELL MINISTRY ============== -->
+  <section id="cell-ministry" class="relative overflow-hidden bg-[#16225a] grain">
+    <div class="absolute inset-0" style="background:radial-gradient(120% 120% at 80% 10%, #2c52b8 0%, #1A3A8F 45%, #122a6b 100%);"></div>
+    <div class="pointer-events-none absolute -top-24 -left-20 h-[30rem] w-[30rem] rounded-full bg-purple/30 blur-[120px]"></div>
+    <div class="pointer-events-none absolute -bottom-28 right-0 h-[28rem] w-[28rem] rounded-full bg-gold/10 blur-[120px]"></div>
+
+    <div class="relative z-10 mx-auto max-w-7xl px-5 sm:px-8 py-20 sm:py-28">
+      <div class="grid items-center gap-12 lg:grid-cols-2">
+        <!-- Copy -->
+        <div>
+          <span class="reveal inline-flex items-center gap-2 rounded-full border border-gold/40 bg-white/5 px-4 py-1.5 text-[12px] font-600 tracking-[0.18em] uppercase text-gold backdrop-blur-sm">
+            <span class="h-1.5 w-1.5 rounded-full bg-gold"></span>
+            <span data-i18n="cell.badge">Find Your Family</span>
+          </span>
+          <h2 class="reveal mt-6 font-display font-700 text-4xl sm:text-5xl text-white leading-[1.05]" data-i18n-html="cell.title_html">
+            Join a <span class="italic text-gold">Cell</span>
+          </h2>
+          <p class="reveal lead mt-5 text-lg text-white/80" data-i18n="cell.p1">
+            The Cell Ministry is the heartbeat of our church — small, close-knit groups that gather through the week for fellowship, the study of God's Word, prayer, and genuine care for one another. It's where no one is just a face in the crowd. In a cell you'll be known, encouraged, and helped to grow and mature in your walk with Christ.
+          </p>
+          <p class="reveal lead mt-4 text-lg text-white/80" data-i18n="cell.p2">
+            Every member belongs, every member contributes, and together we supply to the growth of the Church. There's a cell near you — come and belong.
+          </p>
+          <div class="reveal mt-8">
+            <button type="button" data-open-form="cell-ministry" class="inline-flex items-center justify-center gap-2 rounded-full bg-gold px-8 py-4 text-[15px] font-700 text-ink shadow-gold transition-transform duration-300 ease-out hover:-translate-y-0.5 active:translate-y-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold">
+              <span data-i18n="cell.join">Join a Cell</span>
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Image -->
+        <div class="reveal relative">
+          <div class="relative overflow-hidden rounded-3xl ring-1 ring-white/15 shadow-float">
+            <img src="cell.PNG" alt="Members fellowshipping together in a cell meeting" class="h-full w-full object-cover" />
+            <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/60 via-transparent to-transparent"></div>
+            <div class="pointer-events-none absolute inset-0 bg-royal/20 mix-blend-multiply"></div>
+          </div>
+          <div class="pointer-events-none absolute -bottom-5 -left-5 h-24 w-24 rounded-2xl bg-gold/20 blur-2xl"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== SECTION 3 · SERVE ============== -->
+  <section id="serve" class="relative bg-white py-20 sm:py-28 overflow-hidden">
+    <div class="pointer-events-none absolute top-0 left-1/4 h-[26rem] w-[26rem] rounded-full bg-gold/10 blur-[120px]"></div>
+    <div class="pointer-events-none absolute bottom-0 right-0 h-[22rem] w-[22rem] rounded-full bg-purple/5 blur-[110px]"></div>
+
+    <div class="relative mx-auto max-w-7xl px-5 sm:px-8">
+      <!-- Intro -->
+      <div class="mx-auto max-w-2xl text-center">
+        <span class="reveal inline-flex items-center gap-2 rounded-full bg-gold/15 px-4 py-1.5 text-[12px] font-700 tracking-[0.18em] uppercase text-ink" data-i18n="serve.badge">Use Your Gifts</span>
+        <h2 class="reveal mt-5 font-display font-700 text-4xl sm:text-5xl text-ink leading-[1.05]" data-i18n-html="serve.title_html">
+          There's a place for <span class="text-royal">you to serve</span>
+        </h2>
+        <p class="reveal lead mt-5 text-lg text-ink/65" data-i18n="serve.lead">
+          Some of the greatest moments of your life will happen when you give yourself to something bigger than you. Serving in the house of God is a joy and a privilege — it's where your gifts come alive, your faith grows, and lasting friendships are built. Don't just attend — get involved! Jump in, join a department, and let's build something glorious together.
+        </p>
+      </div>
+
+      <!-- 4 department cards -->
+      <div id="serveGrid" class="mt-14 grid gap-5 sm:gap-6 sm:grid-cols-2 lg:grid-cols-4"></div>
+
+      <!-- CTA -->
+      <div class="reveal mt-12 text-center">
+        <button type="button" data-open-form="join-a-department" class="inline-flex items-center justify-center gap-2 rounded-full bg-gold px-8 py-4 text-[15px] font-700 text-ink shadow-gold transition-transform duration-300 ease-out hover:-translate-y-0.5 active:translate-y-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple">
+          <span data-i18n="serve.join">Join a Department</span>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FORM MODAL (Foundation School / Cell / Department) ============== -->
+  <div id="formModal" class="fixed inset-0 z-[100] flex items-start justify-center overflow-y-auto px-4 py-8 sm:py-16" hidden>
+    <!-- Backdrop -->
+    <div class="form-modal-backdrop absolute inset-0 bg-[#1a0833]/70 backdrop-blur-sm" data-close aria-hidden="true"></div>
+
+    <!-- Dialog card -->
+    <div class="form-modal-card relative z-10 w-full max-w-2xl my-auto rounded-3xl bg-white p-7 sm:p-10 shadow-float ring-1 ring-ink/5"
+         role="dialog" aria-modal="true" aria-labelledby="modal-active-heading">
+      <!-- Close button -->
+      <button type="button" data-close aria-label="Close form"
+              class="absolute right-4 top-4 inline-flex h-10 w-10 items-center justify-center rounded-full text-ink/55 transition-colors duration-200 hover:bg-ink/5 hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-royal active:scale-95">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+
+      <!-- ===== CELL MINISTRY ===== -->
+      <div class="form-modal-panel" id="modal-cell-ministry" hidden>
+        <header class="mb-8 pr-10">
+          <h2 class="font-display font-700 text-2xl sm:text-3xl text-ink" data-i18n="connect.cell_h">Join a Cell</h2>
+          <p class="lead mt-2 text-[15px] text-ink/60" data-i18n="connect.cell_p">Find your family in a small group near you. Tell us where you are and we'll connect you to a cell.</p>
+        </header>
+        <form novalidate data-formtype="cell-ministry" class="grid gap-5 sm:grid-cols-2">
+          <input type="text" name="company" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true" />
+          <div>
+            <label class="fld-label" for="m-cm-name" data-i18n="form.fullname">Full Name</label>
+            <input id="m-cm-name" class="fld" type="text" data-label="Full Name" autocomplete="name" placeholder="Jane Doe" data-i18n-ph="form.ph_jane" required />
+          </div>
+          <div>
+            <label class="fld-label" for="m-cm-phone" data-i18n="form.phone">Phone</label>
+            <input id="m-cm-phone" class="fld" type="tel" data-label="Phone" autocomplete="tel" placeholder="(000) 000-0000" required />
+          </div>
+          <div>
+            <label class="fld-label" for="m-cm-email"><span data-i18n="form.email">Email</span> <span class="fld-opt" data-i18n="form.optional">(optional)</span></label>
+            <input id="m-cm-email" class="fld" type="email" data-label="Email" data-role="email" autocomplete="email" placeholder="jane@example.com" />
+          </div>
+          <div>
+            <label class="fld-label" for="m-cm-area" data-i18n="form.area">Area / neighborhood of residence</label>
+            <input id="m-cm-area" class="fld" type="text" data-label="Area / Neighborhood" placeholder="e.g. Cedar Hill, Red Bird…" data-i18n-ph="form.ph_area" />
+          </div>
+          <div class="sm:col-span-2">
+            <label class="fld-label" for="m-cm-msg"><span data-i18n="form.comments">Comments</span> <span class="fld-opt" data-i18n="form.optional">(optional)</span></label>
+            <textarea id="m-cm-msg" class="fld resize-y" rows="4" data-label="Comments" placeholder="Anything you'd like us to know?" data-i18n-ph="form.ph_know"></textarea>
+          </div>
+          <div class="sm:col-span-2 mt-1 flex flex-col sm:flex-row sm:items-center gap-4">
+            <button type="submit" class="submit-btn inline-flex items-center justify-center gap-2 rounded-full bg-gold px-8 py-3.5 text-[15px] font-700 text-ink shadow-gold transition-transform duration-300 ease-out hover:-translate-y-0.5 active:translate-y-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-royal disabled:opacity-60 disabled:translate-y-0">
+              <span class="btn-label" data-i18n="form.submit">Submit</span>
+              <svg class="btn-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+            </button>
+            <p class="form-status text-[14px] font-600" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+
+      <!-- ===== FOUNDATION SCHOOL ===== -->
+      <div class="form-modal-panel" id="modal-foundation-school" hidden>
+        <header class="mb-8 pr-10">
+          <h2 class="font-display font-700 text-2xl sm:text-3xl text-ink" data-i18n="connect.fs_h">Foundation School Enrollment</h2>
+          <p class="lead mt-2 text-[15px] text-ink/60" data-i18n="connect.fs_p">Build a solid foundation in God's Word. Enroll below and we'll share the class schedule with you.</p>
+        </header>
+        <form novalidate data-formtype="foundation-school" class="grid gap-5 sm:grid-cols-2">
+          <input type="text" name="company" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true" />
+          <div>
+            <label class="fld-label" for="m-fs-name" data-i18n="form.fullname">Full Name</label>
+            <input id="m-fs-name" class="fld" type="text" data-label="Full Name" autocomplete="name" placeholder="Jane Doe" data-i18n-ph="form.ph_jane" required />
+          </div>
+          <div>
+            <label class="fld-label" for="m-fs-phone" data-i18n="form.phone">Phone</label>
+            <input id="m-fs-phone" class="fld" type="tel" data-label="Phone" autocomplete="tel" placeholder="(000) 000-0000" required />
+          </div>
+          <div>
+            <label class="fld-label" for="m-fs-email"><span data-i18n="form.email">Email</span> <span class="fld-opt" data-i18n="form.optional">(optional)</span></label>
+            <input id="m-fs-email" class="fld" type="email" data-label="Email" data-role="email" autocomplete="email" placeholder="jane@example.com" />
+          </div>
+          <div>
+            <label class="fld-label" for="m-fs-sched" data-i18n="form.sched">Preferred class schedule</label>
+            <select id="m-fs-sched" class="fld" data-label="Preferred class schedule">
+              <option value="" data-i18n="form.select_one">Select one…</option>
+              <option data-i18n="form.sched_sun">Sunday</option>
+              <option data-i18n="form.sched_mid">Midweek</option>
+              <option data-i18n="form.sched_either">Either</option>
+            </select>
+          </div>
+          <div class="sm:col-span-2">
+            <span class="fld-label" data-i18n="form.bornagain">Are you born again?</span>
+            <div class="flex gap-3">
+              <label class="pill"><input type="radio" name="m-fs-bornagain" data-label="Born again?" value="Yes" /><span data-i18n="form.yes">Yes</span></label>
+              <label class="pill"><input type="radio" name="m-fs-bornagain" data-label="Born again?" value="No" /><span data-i18n="form.no">No</span></label>
+            </div>
+          </div>
+          <div class="sm:col-span-2">
+            <label class="fld-label" for="m-fs-msg"><span data-i18n="form.comments">Comments</span> <span class="fld-opt" data-i18n="form.optional">(optional)</span></label>
+            <textarea id="m-fs-msg" class="fld resize-y" rows="4" data-label="Comments" placeholder="Any questions for us?" data-i18n-ph="form.ph_questions"></textarea>
+          </div>
+          <div class="sm:col-span-2 mt-1 flex flex-col sm:flex-row sm:items-center gap-4">
+            <button type="submit" class="submit-btn inline-flex items-center justify-center gap-2 rounded-full bg-gold px-8 py-3.5 text-[15px] font-700 text-ink shadow-gold transition-transform duration-300 ease-out hover:-translate-y-0.5 active:translate-y-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-royal disabled:opacity-60 disabled:translate-y-0">
+              <span class="btn-label" data-i18n="form.enroll">Enroll</span>
+              <svg class="btn-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+            </button>
+            <p class="form-status text-[14px] font-600" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+
+      <!-- ===== JOIN A DEPARTMENT ===== -->
+      <div class="form-modal-panel" id="modal-join-a-department" hidden>
+        <header class="mb-8 pr-10">
+          <h2 class="font-display font-700 text-2xl sm:text-3xl text-ink" data-i18n="connect.dept_h">Join a Department</h2>
+          <p class="lead mt-2 text-[15px] text-ink/60" data-i18n="connect.dept_p">Put your gifts to work in the house of God. Let us know where you'd love to serve.</p>
+        </header>
+        <form novalidate data-formtype="join-department" class="grid gap-5 sm:grid-cols-2">
+          <input type="text" name="company" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true" />
+          <div>
+            <label class="fld-label" for="m-dp-name" data-i18n="form.fullname">Full Name</label>
+            <input id="m-dp-name" class="fld" type="text" data-label="Full Name" autocomplete="name" placeholder="Jane Doe" data-i18n-ph="form.ph_jane" required />
+          </div>
+          <div>
+            <label class="fld-label" for="m-dp-contact" data-i18n="form.contact_phone">Contact (phone)</label>
+            <input id="m-dp-contact" class="fld" type="tel" data-label="Contact" autocomplete="tel" placeholder="(000) 000-0000" required />
+          </div>
+          <div>
+            <label class="fld-label" for="m-dp-email"><span data-i18n="form.email">Email</span> <span class="fld-opt" data-i18n="form.optional">(optional)</span></label>
+            <input id="m-dp-email" class="fld" type="email" data-label="Email" data-role="email" autocomplete="email" placeholder="jane@example.com" />
+          </div>
+          <div>
+            <label class="fld-label" for="m-dp-dept" data-i18n="form.department">Department</label>
+            <select id="m-dp-dept" class="fld" data-label="Department">
+              <option value="" data-i18n="form.select_dept">Select a department…</option>
+              <option data-i18n="form.dept_choir">Choir</option>
+              <option data-i18n="form.dept_media">Media</option>
+              <option data-i18n="form.dept_ushering">Ushering</option>
+              <option data-i18n="form.dept_hospitality">Hospitality</option>
+            </select>
+          </div>
+          <div class="sm:col-span-2">
+            <label class="fld-label" for="m-dp-passion" data-i18n="form.passion">What are you passionate about?</label>
+            <textarea id="m-dp-passion" class="fld resize-y" rows="4" data-label="What are you passionate about?" placeholder="Tell us what stirs your heart to serve…" data-i18n-ph="form.ph_passion"></textarea>
+          </div>
+          <div class="sm:col-span-2 mt-1 flex flex-col sm:flex-row sm:items-center gap-4">
+            <button type="submit" class="submit-btn inline-flex items-center justify-center gap-2 rounded-full bg-gold px-8 py-3.5 text-[15px] font-700 text-ink shadow-gold transition-transform duration-300 ease-out hover:-translate-y-0.5 active:translate-y-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-royal disabled:opacity-60 disabled:translate-y-0">
+              <span class="btn-label" data-i18n="form.submit">Submit</span>
+              <svg class="btn-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+            </button>
+            <p class="form-status text-[14px] font-600" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============== FOOTER (shared) ============== -->
+  <div id="site-footer"></div>
+
+  <script>
+    /* Bilingual content — re-rendered when the language toggle changes. */
+    const L = () => (window.CED_I18N ? window.CED_I18N.getLang() : 'en');
+    const pick = (v) => (v && typeof v === 'object' ? (v[L()] || v.en) : v);
+
+    /* ---- Foundation School classes ---- */
+    const fsClasses = [
+      { tag: { en: 'Class 1', es: 'Clase 1' }, title: { en: 'The New Creature', es: 'La Nueva Criatura' }, body: { en: 'Learn who you are in Christ as a new creature with a new life and nature from God. Understand your victory over defeat, failure, and the kingdom of darkness.', es: 'Aprende quién eres en Cristo como una nueva criatura con una nueva vida y naturaleza de Dios. Comprende tu victoria sobre la derrota, el fracaso y el reino de las tinieblas.' } },
+      { tag: { en: 'Class 2', es: 'Clase 2' }, title: { en: 'The Holy Spirit', es: 'El Espíritu Santo' }, body: { en: 'Gain a firm understanding of the Holy Spirit and His essential ministry in the life of every Christian. Learn how to receive His full advantage and live a successful Christian life.', es: 'Adquiere un firme entendimiento del Espíritu Santo y su ministerio esencial en la vida de todo cristiano. Aprende a recibir toda su ventaja y a vivir una vida cristiana exitosa.' } },
+      { tag: { en: 'Class 3', es: 'Clase 3' }, title: { en: 'Christian Doctrine', es: 'Doctrina Cristiana' }, body: { en: 'Students are equipped with core scriptural doctrines — including the supremacy of the Bible, righteousness, faith, and baptism — to establish a sound, unshakeable Christian foundation.', es: 'Los estudiantes son equipados con doctrinas bíblicas fundamentales — incluyendo la supremacía de la Biblia, la justicia, la fe y el bautismo — para establecer un fundamento cristiano sólido e inquebrantable.' } },
+      { tag: { en: 'Class 4A', es: 'Clase 4A' }, title: { en: 'Evangelism and Soulwinning', es: 'Evangelización y Ganar Almas' }, body: { en: 'Understand the ministry of reconciliation and your personal responsibility to win souls. Learn practical steps to communicate the Gospel effectively and produce lasting results.', es: 'Comprende el ministerio de la reconciliación y tu responsabilidad personal de ganar almas. Aprende pasos prácticos para comunicar el Evangelio con eficacia y producir resultados duraderos.' } },
+      { tag: { en: 'Class 4B', es: 'Clase 4B' }, title: { en: 'Introduction to Cell Ministry', es: 'Introducción al Ministerio de Células' }, body: { en: 'Learn the necessity and benefits of the Cell Ministry and your responsibility to participate and contribute. Discover how the Cell Ministry helps every member grow, mature, and supply to the growth of the Church.', es: 'Aprende la necesidad y los beneficios del Ministerio de Células y tu responsabilidad de participar y contribuir. Descubre cómo el Ministerio de Células ayuda a cada miembro a crecer, madurar y aportar al crecimiento de la Iglesia.' } },
+      { tag: { en: 'Class 5', es: 'Clase 5' }, title: { en: 'Christian Character and Prosperity', es: 'Carácter Cristiano y Prosperidad' }, body: { en: 'Students are set on a course of progressive Christ-like character development through the Word, prayer, and Spirit-filled living. Learn the importance of partnership in advancing the Gospel and supporting the work of the ministry. Discover how your participation contributes to God’s vision and purpose.', es: 'Los estudiantes son encaminados a un desarrollo progresivo de un carácter semejante al de Cristo a través de la Palabra, la oración y una vida llena del Espíritu. Aprende la importancia de la asociación para avanzar el Evangelio y apoyar la obra del ministerio. Descubre cómo tu participación contribuye a la visión y el propósito de Dios.' } },
+      { tag: { en: 'Class 6', es: 'Clase 6' }, title: { en: 'The Local Assembly and Loveworld Inc. (Christ Embassy)', es: 'La Asamblea Local y Loveworld Inc. (Christ Embassy)' }, body: { en: 'Understand why every Christian must belong to a local assembly and attend church services. Learn about Christ Embassy’s vision, mission, purpose, and statements of faith.', es: 'Comprende por qué todo cristiano debe pertenecer a una asamblea local y asistir a los servicios de la iglesia. Conoce la visión, misión, propósito y declaraciones de fe de Christ Embassy.' } },
+      { tag: { en: 'Class 7', es: 'Clase 7' }, title: { en: 'Introduction to Mobile Technology for Personal Growth, Evangelism and Church Growth', es: 'Introducción a la Tecnología Móvil para el Crecimiento Personal, la Evangelización y el Crecimiento de la Iglesia' }, body: { en: 'Learn how to use ministry technology platforms and apps for personal growth, evangelism, and church growth. Gain practical knowledge for reaching souls and discipling others through technology.', es: 'Aprende a usar las plataformas y aplicaciones tecnológicas del ministerio para el crecimiento personal, la evangelización y el crecimiento de la iglesia. Obtén conocimiento práctico para alcanzar almas y discipular a otros mediante la tecnología.' } },
+    ];
+
+    /* ---- Serving departments ---- */
+    const departments = [
+      { name: { en: 'Ushering', es: 'Ujieres' }, body: { en: 'Welcoming and guiding people, creating a warm, orderly atmosphere for every service.', es: 'Damos la bienvenida y guiamos a las personas, creando un ambiente cálido y ordenado para cada servicio.' }, img: 'https://images.unsplash.com/photo-1570884148852-156d41055e8a?w=900&q=70&auto=format&fit=crop' },
+      { name: { en: 'Choir', es: 'Coro' }, body: { en: 'Leading the congregation in worship and praise through music and song.', es: 'Guiamos a la congregación en adoración y alabanza a través de la música y el canto.' }, img: 'choir.JPG' },
+      { name: { en: 'Media', es: 'Medios' }, body: { en: 'Capturing and broadcasting our services through sound, video, and live streaming.', es: 'Capturamos y transmitimos nuestros servicios mediante sonido, video y transmisión en vivo.' }, img: 'https://plus.unsplash.com/premium_photo-1682146717223-874ac7dcc607?w=900&q=70&auto=format&fit=crop' },
+      { name: { en: 'Hospitality', es: 'Hospitalidad' }, body: { en: 'Caring for guests and members, making everyone feel right at home.', es: 'Cuidamos a los invitados y miembros, haciendo que todos se sientan como en casa.' }, img: 'https://plus.unsplash.com/premium_photo-1733317223968-9bb3a925b245?w=900&q=70&auto=format&fit=crop' },
+    ];
+
+    function renderNewHere() {
+      document.getElementById('fsGrid').innerHTML = fsClasses.map((c, i) => `
+        <article class="reveal group relative flex flex-col overflow-hidden rounded-2xl bg-gold p-6 shadow-card ring-1 ring-ink/10 transition-transform duration-500 ease-out hover:-translate-y-1.5 hover:shadow-float" style="transition-delay:${i * 60}ms">
+          <div class="absolute inset-x-0 bottom-0 h-0.5 bg-ink/80 scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100"></div>
+          <span class="inline-flex w-fit items-center rounded-full bg-ink/10 px-3 py-1 text-[11px] font-700 tracking-[0.12em] uppercase text-ink">${pick(c.tag)}</span>
+          <h3 class="mt-4 font-display font-700 text-lg text-ink leading-snug">${pick(c.title)}</h3>
+          <p class="lead mt-3 text-[14px] text-ink/75">${pick(c.body)}</p>
+        </article>`).join('');
+
+      document.getElementById('serveGrid').innerHTML = departments.map((d, i) => {
+        const name = pick(d.name), body = pick(d.body);
+        return `
+        <article class="reveal group relative flex flex-col overflow-hidden rounded-2xl bg-white shadow-card ring-1 ring-ink/5 transition-transform duration-500 ease-out hover:-translate-y-1.5 hover:shadow-float" style="transition-delay:${i * 80}ms">
+          <div class="relative aspect-[4/3] overflow-hidden">
+            <img src="${d.img}" alt="${name}" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
+            <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
+            <div class="pointer-events-none absolute inset-0 bg-royal/20 mix-blend-multiply"></div>
+            <h3 class="absolute bottom-3 left-4 font-display font-700 text-xl text-white">${name}</h3>
+          </div>
+          <p class="lead px-5 py-5 text-[14px] text-ink/60">${body}</p>
+        </article>`;
+      }).join('');
+
+      // Reveal re-rendered nodes on the next frame (not tracked by site.js observer).
+      requestAnimationFrame(function () {
+        document.querySelectorAll('#fsGrid .reveal, #serveGrid .reveal')
+          .forEach(function (el) { el.classList.add('in'); });
+      });
+    }
+
+    renderNewHere();
+    window.addEventListener('cedlangchange', renderNewHere);
+  </script>
+
+  <script src="forms-config.js"></script>
+  <script>
+    /* ============== FORM MODAL ==============
+       Opens the matching form (Foundation School / Cell / Department) in a modal
+       so visitors never leave this page. Submission posts to /api/submit. */
+    (function () {
+      const T = (key, fallback) => (window.CED_I18N ? window.CED_I18N.t(key) : fallback);
+
+      const modal = document.getElementById('formModal');
+      const card = modal.querySelector('.form-modal-card');
+      const panels = Array.from(modal.querySelectorAll('.form-modal-panel'));
+      let lastFocused = null;
+
+      /* ---------- Open / close ---------- */
+      function openModal(key) {
+        const active = document.getElementById('modal-' + key);
+        if (!active) return;
+        lastFocused = document.activeElement;
+
+        panels.forEach((p) => { p.hidden = p.id !== 'modal-' + key; });
+        const heading = active.querySelector('h2');
+        if (heading) {
+          if (!heading.id) heading.id = active.id + '-heading';
+          card.setAttribute('aria-labelledby', heading.id);
+        }
+
+        modal.hidden = false;
+        document.body.style.overflow = 'hidden';
+
+        // Focus the first field on the next frame (after the panel is visible).
+        requestAnimationFrame(() => {
+          const first = active.querySelector('input:not([type="hidden"]):not([tabindex="-1"]), select, textarea');
+          (first || card.querySelector('[data-close]')).focus();
+        });
+      }
+
+      function closeModal() {
+        if (modal.hidden) return;
+        modal.hidden = true;
+        document.body.style.overflow = '';
+        if (lastFocused && typeof lastFocused.focus === 'function') lastFocused.focus();
+      }
+
+      // Triggers (anchors keep their href as a no-JS fallback).
+      document.querySelectorAll('[data-open-form]').forEach((el) => {
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+          openModal(el.dataset.openForm);
+        });
+      });
+
+      // Dismiss: backdrop + close button.
+      modal.querySelectorAll('[data-close]').forEach((el) => el.addEventListener('click', closeModal));
+
+      // Dismiss: Escape, and trap Tab within the dialog while open.
+      document.addEventListener('keydown', (e) => {
+        if (modal.hidden) return;
+        if (e.key === 'Escape') { closeModal(); return; }
+        if (e.key !== 'Tab') return;
+
+        const focusables = Array.from(
+          card.querySelectorAll('a[href], button:not([disabled]), input:not([type="hidden"]):not([tabindex="-1"]), select, textarea, [tabindex]:not([tabindex="-1"])')
+        ).filter((el) => el.offsetParent !== null);
+        if (!focusables.length) return;
+        const firstEl = focusables[0];
+        const lastEl = focusables[focusables.length - 1];
+        if (e.shiftKey && document.activeElement === firstEl) { e.preventDefault(); lastEl.focus(); }
+        else if (!e.shiftKey && document.activeElement === lastEl) { e.preventDefault(); firstEl.focus(); }
+      });
+
+      /* ---------- Submission → POST /api/submit ---------- */
+      const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      function fieldValue(el) {
+        if (el.type === 'radio') {
+          const checked = el.form.querySelector(`input[name="${el.name}"]:checked`);
+          return checked ? checked.value : '';
+        }
+        return (el.value || '').trim();
+      }
+
+      function subjectFor(type, name, dept) {
+        const who = name || 'Someone';
+        if (type === 'cell-ministry')     return `Cell Ministry Sign-up — ${who}`;
+        if (type === 'foundation-school') return `Foundation School Enrollment — ${who}`;
+        if (type === 'join-department')   return `Department Volunteer — ${who}${dept ? ` (${dept})` : ''}`;
+        return `Website Form — ${who}`;
+      }
+
+      modal.querySelectorAll('form[data-formtype]').forEach((form) => {
+        const status = form.querySelector('.form-status');
+        const btn = form.querySelector('.submit-btn');
+        const btnLabel = btn.querySelector('.btn-label');
+        const originalLabel = btnLabel.textContent;
+        const restoreLabel = () => T(btnLabel.dataset.i18n, originalLabel);
+
+        form.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          status.textContent = '';
+          status.className = 'form-status text-[14px] font-600';
+
+          const honeypot = form.querySelector('input[name="company"]').value;
+
+          const seen = new Set();
+          const fields = [];
+          let name = '', email = '';
+          form.querySelectorAll('[data-label]').forEach((el) => {
+            if (el.type === 'radio') { if (seen.has(el.name)) return; seen.add(el.name); }
+            const value = fieldValue(el);
+            fields.push({ label: el.dataset.label, value });
+            if (el.dataset.label === 'Full Name') name = value;
+            if (el.dataset.role === 'email') email = value;
+          });
+
+          const nameVal = fields.find((f) => f.label === 'Full Name')?.value;
+          const phoneVal = (fields.find((f) => f.label === 'Phone') || fields.find((f) => f.label === 'Contact'))?.value;
+          if (!nameVal || !phoneVal) {
+            status.textContent = T('msg.need_name_phone', 'Please enter your name and phone number.');
+            status.classList.add('text-purple');
+            return;
+          }
+          if (email && !emailRe.test(email)) {
+            status.textContent = T('msg.email_or_blank', 'Please enter a valid email address (or leave it blank).');
+            status.classList.add('text-purple');
+            return;
+          }
+
+          btn.disabled = true; btnLabel.textContent = T('msg.sending', 'Sending…');
+          try {
+            const payload = {};
+            fields.forEach((f) => { payload[f.label] = f.value; });
+            if (email) payload._replyto = email;
+            payload._gotcha = honeypot;
+            payload._subject = subjectFor(form.dataset.formtype, name, payload['Department']);
+
+            const res = await fetch(window.CED_FORMS[form.dataset.formtype], {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+              body: JSON.stringify(payload),
+            });
+            const data = await res.json().catch(() => ({}));
+
+            if (res.ok) {
+              const done = document.createElement('div');
+              done.className = 'rounded-2xl bg-royal/[0.04] ring-1 ring-royal/10 p-8 text-center';
+              done.innerHTML = `
+                <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-gold text-ink">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                </div>
+                <h3 class="mt-5 font-display font-700 text-2xl text-ink">${T('msg.allset', "You're all set")}${name ? ', ' + name.split(' ')[0] : ''}!</h3>
+                <p class="lead mt-2 text-[15px] text-ink/60">${T('msg.allset_done', 'Thank you — our team has your details and will reach out to you soon.')}</p>`;
+              form.replaceWith(done);
+            } else {
+              const err = Array.isArray(data.errors) ? data.errors.map((e) => e.message).join(', ') : data.error;
+              status.textContent = err || T('msg.generic_error', 'Something went wrong. Please try again.');
+              status.classList.add('text-purple');
+              btn.disabled = false; btnLabel.textContent = restoreLabel();
+            }
+          } catch {
+            status.textContent = T('msg.network_error', 'Network error. Please check your connection and try again.');
+            status.classList.add('text-purple');
+            btn.disabled = false; btnLabel.textContent = restoreLabel();
+          }
+        });
+      });
+    })();
+  </script>
+
+  <script src="site.js"></script>
+  <script src="i18n.js"></script>
+</body>
+</html>
