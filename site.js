@@ -86,7 +86,7 @@
         </div>
 
         <!-- Quick Links -->
-        <div class="lg:col-span-3">
+        <div class="lg:col-span-2">
           <h4 class="font-700 text-[13px] tracking-[0.2em] uppercase text-gold" data-i18n="footer.quicklinks">Quick Links</h4>
           <ul class="mt-5 space-y-3 text-[15px] text-white/65">
             <li><a href="index.html" class="transition-colors hover:text-white" data-i18n="nav.home">Home</a></li>
@@ -98,7 +98,7 @@
         </div>
 
         <!-- Contact -->
-        <div class="lg:col-span-2">
+        <div class="lg:col-span-3">
           <h4 class="font-700 text-[13px] tracking-[0.2em] uppercase text-gold" data-i18n="footer.contact_h">Contact</h4>
           <ul class="mt-5 space-y-4 text-[15px] text-white/65">
             <li class="flex items-start gap-3">
@@ -107,7 +107,7 @@
             </li>
             <li class="flex items-start gap-3">
               <svg class="mt-0.5 shrink-0 text-gold" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
-              <span>CeduncanvilleTX@gmail.com</span>
+              <span>info@christembassyduncanville.church</span>
             </li>
           </ul>
         </div>
