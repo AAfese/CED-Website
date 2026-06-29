@@ -71,9 +71,15 @@
       'events.e2_date': 'Fri 24 – Sun 26 July 2026 · 8:00 AM CST',
       'events.e2_loc': 'Live online & at Christ Embassy Duncanville',
       'events.e2_desc': 'A global healing service with Pastor Chris. Join us live as the sick are healed and lives are restored by the power of God.',
+      'events.e4_date': 'Sun 5 July 2026',
+      'events.e4_loc': '606 Oriole Blvd, Bldg Ste 204, Duncanville, TX 75116',
+      'events.e4_desc': 'Join us for our July global communion service with the man of God Pastor Chris. Come, participate and be blessed.',
+      'events.watch_now': 'Watch Now',
       'events.e3_date': 'Sat 4 July 2026',
       'events.e3_loc': '100 James Collins Blvd, Duncanville, TX 75116',
       'events.e3_desc': "ReachOut World USA is a powerful global evangelism campaign organized by LoveWorld Incorporated (Christ Embassy), dedicated to distributing Rhapsody of Realities and sharing the Gospel with people around the world. As America celebrates its 250th birthday this year, we have a special opportunity on July 4th to reach out to our communities with the love of Christ. What better way to celebrate our nation than by spreading hope, faith, and God's love to those around us? Join us as we make an impact, one life at a time!",
+      'events.empty_title': 'No Upcoming Events',
+      'events.empty_body': 'Check back soon — new events are added regularly.',
 
       /* ---------- Giving ---------- */
       'giving.badge': 'Giving',
@@ -244,9 +250,15 @@
       'events.e2_date': 'Vie 24 – Dom 26 de julio de 2026 · 8:00 AM CST',
       'events.e2_loc': 'En vivo en línea y en Christ Embassy Duncanville',
       'events.e2_desc': 'Un servicio de sanidad global con el Pastor Chris. Acompáñanos en vivo mientras los enfermos son sanados y las vidas son restauradas por el poder de Dios.',
+      'events.e4_date': 'Dom 5 de julio de 2026',
+      'events.e4_loc': '606 Oriole Blvd, Bldg Ste 204, Duncanville, TX 75116',
+      'events.e4_desc': 'Únete a nuestro servicio global de comunión de julio con el hombre de Dios, el Pastor Chris. Ven, participa y sé bendecido.',
+      'events.watch_now': 'Ver Ahora',
       'events.e3_date': 'Sáb 4 de julio de 2026',
       'events.e3_loc': '100 James Collins Blvd, Duncanville, TX 75116',
       'events.e3_desc': 'ReachOut World USA es una poderosa campaña global de evangelismo organizada por LoveWorld Incorporated (Christ Embassy), dedicada a distribuir Rhapsody of Realities y compartir el Evangelio con personas de todo el mundo. Mientras Estados Unidos celebra su aniversario número 250 este año, tenemos una oportunidad especial el 4 de julio para alcanzar a nuestras comunidades con el amor de Cristo. ¿Qué mejor manera de celebrar nuestra nación que difundiendo esperanza, fe y el amor de Dios a quienes nos rodean? ¡Únete a nosotros mientras impactamos vidas, una a la vez!',
+      'events.empty_title': 'No Hay Próximos Eventos',
+      'events.empty_body': 'Vuelve pronto — se agregan nuevos eventos regularmente.',
 
       /* ---------- Giving ---------- */
       'giving.badge': 'Donaciones',
